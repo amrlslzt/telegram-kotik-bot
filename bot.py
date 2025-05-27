@@ -23,7 +23,7 @@ menu = InlineKeyboardMarkup(inline_keyboard=[
 
 @dp.message(commands=["start", "help"])
 async def start_handler(message: Message):
-    await message.answer("Привет, Котёнок! 🐱 Я твой уютный котик.
+    await message.answer("Привет, Котёнок! 🐱 Я твой уютный котик.\nВыбирай, что хочешь сделать:", reply_markup=menu)
 Выбирай, что хочешь сделать:", reply_markup=menu)
 
 @dp.callback_query()
